@@ -17,13 +17,13 @@ export function Profile({ username, tag, location, avatar, stats }) {
         <ProfileImage
           src={avatar}
           alt="User avatar"
-          class="avatar"
+          className="avatar"
           width="120"
         />
 
-        <ProfileName class="name">{username}</ProfileName>
-        <ProfileInfo class="tag">@{tag}</ProfileInfo>
-        <ProfileInfo class="location">
+        <ProfileName className="name">{username}</ProfileName>
+        <ProfileInfo className="tag">@{tag}</ProfileInfo>
+        <ProfileInfo className="location">
           <HiLocationMarker size={10} color={`silver `} />
           {location}
         </ProfileInfo>
@@ -31,15 +31,15 @@ export function Profile({ username, tag, location, avatar, stats }) {
         <StatsCard>
           <StatsInfo>
             <HiUserGroup size={24} color={`#ffa577`} />
-            <span class="quantity">{stats.followers}</span>
+            <span className="quantity">{stats.followers}</span>
           </StatsInfo>
           <StatsInfo>
             <HiEye size={24} color={`#D55448`} />
-            <span class="quantity">{stats.views}</span>
+            <span className="quantity">{stats.views}</span>
           </StatsInfo>
           <StatsInfo>
             <HiHeart size={24} color={`#896E69 `} />
-            <span class="quantity">{stats.likes}</span>
+            <span className="quantity">{stats.likes}</span>
           </StatsInfo>
         </StatsCard>
       </ProfileCard>
@@ -48,7 +48,8 @@ export function Profile({ username, tag, location, avatar, stats }) {
 }
 
 Profile.propTypes = {
-  username: PropTypes.string,
-  tag: PropTypes.string,
-  location: PropTypes.string,
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  avatar: PropTypes.string,
 };

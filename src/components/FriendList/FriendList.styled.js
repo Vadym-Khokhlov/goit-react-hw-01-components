@@ -5,7 +5,7 @@ export const Friends = styled.section`
   margin-right: auto;
   width: 300px;
   height: auto;
-  background-color: #e6e6ec;
+  background-color: #896e69;
   font-size: 12px;
   border: 2px solid #ffa577;
   border-radius: 5px;

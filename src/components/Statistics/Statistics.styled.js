@@ -6,7 +6,7 @@ export const Stats = styled.section`
   margin-bottom: 50px;
   width: 300px;
   height: 100px;
-  background-color: #e6e6ec;
+  background-color: #896e69;
   font-size: 12px;
   border: 2px solid #ffa577;
   border-radius: 5px;
