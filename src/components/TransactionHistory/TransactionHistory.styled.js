@@ -14,6 +14,10 @@ export const TransTable = styled.table`
   margin-right: auto;
   background-color: #896e69;
   color: #f9f9ff;
+  tr:nth-child(2n + 1) {
+    background-color: #f9f9ff;
+    color: #896e69;
+  }
 `;
 
 export const TableHeading = styled.th`
