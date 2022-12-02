@@ -24,21 +24,21 @@ export function Profile({ username, tag, location, avatar, stats }) {
         <ProfileName className="name">{username}</ProfileName>
         <ProfileInfo className="tag">@{tag}</ProfileInfo>
         <ProfileInfo className="location">
-          <HiLocationMarker size={10} color={`silver `} />
+          <HiLocationMarker size={20} color={`silver `} />
           {location}
         </ProfileInfo>
 
         <StatsCard>
           <StatsInfo>
-            <HiUserGroup size={24} color={`#ffa577`} />
+            <HiUserGroup size={42} color={`#ffa577`} />
             <span className="quantity">{stats.followers}</span>
           </StatsInfo>
           <StatsInfo>
-            <HiEye size={24} color={`#D55448`} />
+            <HiEye size={42} color={`#D55448`} />
             <span className="quantity">{stats.views}</span>
           </StatsInfo>
           <StatsInfo>
-            <HiHeart size={24} color={`#896E69 `} />
+            <HiHeart size={42} color={`#896E69 `} />
             <span className="quantity">{stats.likes}</span>
           </StatsInfo>
         </StatsCard>

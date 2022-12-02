@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const FriendCard = styled.div`
-  width: 250px;
+  width: 300px;
   height: 120px;
   background-color: #e6e6ec;
   display: flex;
@@ -34,5 +34,5 @@ export const FriendName = styled.h2`
 
 export const IsOnline = styled.span`
   color: greenyellow;
-  font-size: 10px;
+  font-size: 12px;
 `;

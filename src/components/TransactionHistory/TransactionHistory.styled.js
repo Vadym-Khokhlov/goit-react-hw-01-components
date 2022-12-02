@@ -9,7 +9,7 @@ export const TransTable = styled.table`
   border-radius: 5px;
   padding: 8px;
   text-align: center;
-  width: 300px;
+  width: 500px;
   margin-left: auto;
   margin-right: auto;
   background-color: #896e69;

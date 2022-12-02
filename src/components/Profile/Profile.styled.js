@@ -9,31 +9,31 @@ export const ProfileWrap = styled.section`
 `;
 
 export const ProfileCard = styled.div`
-  width: auto;
+  width: 300px;
   height: auto;
   background-color: #e6e6ec;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: auto;
+  gap: 10px;
   border-radius: 5px;
   border: 2px solid #ffa577;
   color: #ffa577;
-  font-size: 12px;
+  font-size: 20px;
 `;
 
 export const ProfileImage = styled.img`
   background-color: #f9f9ff;
   border-radius: 50%;
   border: 2px solid #f9f9ff;
-  height: 100px;
-  width: 100px;
+  height: 150px;
+  width: 150px;
   margin-top: 5px;
 `;
 
 export const ProfileName = styled.h2`
-  font-size: 16px;
+  font-size: 26px;
   padding: 0;
   margin: 0;
 `;
@@ -47,9 +47,8 @@ export const ProfileInfo = styled.p`
 
 export const StatsCard = styled.ul`
   display: flex;
-  justify-content: space-around;
-  align-content: center;
-  gap: 5px;
+  align-items: center;
+  justify-content: center;
   padding: 0;
   margin: 0;
   color: #ffa577;
@@ -61,4 +60,9 @@ export const StatsInfo = styled.li`
   justify-content: center;
   align-content: center;
   color: #ffa577;
+  margin-bottom: 10px;
+  border: 1px solid #ffa577;
+  border-radius: 2px;
+  padding-right: 15px;
+  padding-left: 15px;
 `;
