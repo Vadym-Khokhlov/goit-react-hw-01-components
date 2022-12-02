@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { getRandomHexColor } from './randomHex';
 
 export const Stats = styled.section`
   margin-left: auto;
@@ -36,5 +35,8 @@ export const StatItem = styled.li`
   width: auto;
   height: 30px;
   text-align: center;
-  padding: 5px;
+  padding: 4px;
+  span:not(:last-child) {
+    margin-right: 5px;
+  }
 `;
