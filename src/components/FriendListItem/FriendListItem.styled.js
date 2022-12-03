@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const FriendCard = styled.div`
+export const FriendCard = styled.li`
   width: 300px;
   height: 120px;
   background-color: #e6e6ec;
@@ -23,10 +23,9 @@ export const FriendImage = styled.img`
   width: 70px;
   margin-left: 5px;
   margin-right: 5px;
-  margin-top: 5px;
 `;
 
-export const FriendName = styled.h2`
+export const FriendName = styled.p`
   font-size: 16px;
   padding: 0;
   margin: 0;

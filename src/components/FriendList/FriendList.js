@@ -1,6 +1,5 @@
 import { FriendListItem } from '../FriendListItem/FriendListItem';
 import { Friends, FriendPanel, FriendPanelHeading } from './FriendList.styled';
-import { FriendCard } from 'components/FriendListItem/FriendListItem.styled';
 import PropTypes from 'prop-types';
 
 export function FriendList({ friends }) {
@@ -9,13 +8,12 @@ export function FriendList({ friends }) {
       <FriendPanelHeading>Friends List</FriendPanelHeading>
       <FriendPanel>
         {friends.map(friend => (
-          <FriendCard key={friend.id}>
-            <FriendListItem
-              avatar={friend.avatar}
-              name={friend.name}
-              isOnline={friend.isOnline}
-            />
-          </FriendCard>
+          <FriendListItem
+            key={friend.id}
+            avatar={friend.avatar}
+            name={friend.name}
+            isOnline={friend.isOnline}
+          />
         ))}
       </FriendPanel>
     </Friends>
@@ -23,12 +21,12 @@ export function FriendList({ friends }) {
 }
 
 FriendList.propTypes = {
-  friend: PropTypes.arrayOf(
+  friends: PropTypes.arrayOf(
     PropTypes.shape({
-      avatar: PropTypes.string,
+      avatar: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,
       isOnline: PropTypes.bool.isRequired,
       id: PropTypes.number.isRequired,
     })
-  ),
+  ).isRequired,
 };

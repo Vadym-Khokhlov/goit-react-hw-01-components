@@ -9,9 +9,9 @@ import PropTypes from 'prop-types';
 export function FriendListItem({ avatar, name, isOnline }) {
   return (
     <FriendCard>
+      {isOnline && <IsOnline>online</IsOnline>}
       <FriendImage src={avatar} alt="User avatar" width="48" />
       <FriendName>{name}</FriendName>
-      {isOnline && <IsOnline>online</IsOnline>}
     </FriendCard>
   );
 }

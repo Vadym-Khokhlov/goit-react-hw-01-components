@@ -1,6 +1,5 @@
 import { StatHeading, StatItem, StatList, Stats } from './Statistics.styled';
 import PropTypes from 'prop-types';
-import { getRandomHexColor } from './randomHex';
 
 export function Statistics({ stats, title }) {
   return (
@@ -8,10 +7,7 @@ export function Statistics({ stats, title }) {
       {title && <StatHeading>{title}</StatHeading>}
       <StatList>
         {stats.map(stat => (
-          <StatItem
-            key={stat.id}
-            style={{ backgroundColor: getRandomHexColor() }}
-          >
+          <StatItem key={stat.id}>
             <span className="label">{stat.label}</span>
             <span className="percentage">{stat.percentage}%</span>
           </StatItem>
@@ -29,5 +25,5 @@ Statistics.propTypes = {
       label: PropTypes.string.isRequired,
       percentage: PropTypes.number.isRequired,
     })
-  ),
+  ).isRequired,
 };
